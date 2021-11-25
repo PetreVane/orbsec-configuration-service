@@ -9,23 +9,29 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.orbsec</groupId>
-	<artifactId>configserver</artifactId>
+	<artifactId>config-service</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>configserver</name>
-	<description>Configuration Server</description>
+	<name>config-service</name>
+	<description>Spring Cloud Configuration Service</description>
 	<properties>
 		<java.version>11</java.version>
-		<spring-cloud.version>2021.0.0-RC1</spring-cloud.version>
 		<docker.image.prefix>orbsec</docker.image.prefix>
+		<spring-cloud.version>2021.0.0-RC1</spring-cloud.version>
 	</properties>
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-actuator</artifactId>
 		</dependency>
+
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-config-server</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-bootstrap</artifactId>
 		</dependency>
 
 		<dependency>
